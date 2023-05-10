@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e2151"
+    tools:context=".activity.account.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <TextView
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_bolditalic"
+            android:textSize="@dimen/_24sdp"
+            android:text="Create Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#A8A8A8"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Create new account to continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <RelativeLayout
+                android:id="@+id/bg_ing_user"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@drawable/signup_bg_img">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/img_user"
+                    android:src="@drawable/chaticon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="108dp"
+                android:id="@+id/bgr_ic_add_img"
+                android:background="@drawable/signup_btn_add_img"
+                android:layout_marginTop="84dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:src="@drawable/ic_baseline_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/input_bg_edt_dark"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/ic_baseline_person" />
+
+            <EditText
+                android:textCursorDrawable="@drawable/cusor_color_bg_dark"
+                android:id="@+id/edtusername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_edr_account"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="User name"
+                android:inputType="text"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textColorHint="#bcbcbc"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/requrename"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/input_bg_edt_dark"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/ic_baseline_email" />
+
+            <EditText
+                android:textCursorDrawable="@drawable/cusor_color_bg_dark"
+                android:id="@+id/edtuseremail"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_edr_account"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Email"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textColorHint="#bcbcbc"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/requireemail"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/input_bg_edt_dark"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/ic_baseline_key" />
+
+            <EditText
+                android:textCursorDrawable="@drawable/cusor_color_bg_dark"
+                android:id="@+id/edtuserpass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Password"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/bg_edr_account"
+                android:inputType="textPassword"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textColorHint="#bcbcbc"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/requirepass"
+            android:layout_marginLeft="@dimen/_10sdp"
+
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/input_bg_edt_dark"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/ic_baseline_vpn_key" />
+
+            <EditText
+                android:textCursorDrawable="@drawable/cusor_color_bg_dark"
+                android:id="@+id/edtuservfpass"
+                android:inputType="textPassword"
+                android:background="@drawable/bg_edr_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Verify password"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textColorHint="#bcbcbc"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/requirvfpass"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/start_actv_btn_shadow"
+            android:paddingStart="20sp"
+            android:paddingEnd="10sp"
+            android:text="Continue"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgapp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Already have an account?"
+                android:textColor="#8A8A8A"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/signintxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Sign in"
+                android:textColor="#6B27F6"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</ScrollView>

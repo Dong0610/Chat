@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/linearLayout" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@id/linearLayout"
+            android:layout_height="1dp"
+            android:layout_width="match_parent" />
+    </ConstraintSet>
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start" >
+        <KeyFrameSet >
+            <KeyAttribute
+                app:motionTarget="@+id/linearLayout"
+                app:framePosition="0"
+                android:alpha="1" />
+        </KeyFrameSet>
+        <OnSwipe
+            app:touchAnchorId="@+id/linearLayout"
+            app:touchAnchorSide="bottom" />
+    </Transition>
+</MotionScene>

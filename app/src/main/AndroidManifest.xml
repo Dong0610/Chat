@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/chaticon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Chat"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="dongdong.duan.chat"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <activity
+            android:name=".activity.chat.ChatSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.InfomationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.UserTimelineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.reels.ReelsDetailViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.post.PostViewDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.UpdatePassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.FriendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.reels.ReelViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.reels.AddReelsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.chat.InvitationOutGoingActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".activity.chat.InvitationCommingActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".activity.chat.VideoCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.post.CommentPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.AddNewPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.UserInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.qrcode.UserQrcodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.chat.ImageShow"
+            android:exported="false" />
+        <activity
+            android:name=".activity.chat.ChatActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.qrcode.QrcodeScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.account.SignInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.account.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorStickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorTextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorDrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+
+        <service
+            android:name=".firebase.MessageService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.jitsi.meet.sdk.ConnectionService"
+            android:exported="true"
+            android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE">
+            <intent-filter>
+                <action android:name="android.telecom.ConnectionService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

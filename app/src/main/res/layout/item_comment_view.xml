@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imgicusers"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/item_mess_bg_img_user"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/txtusername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:text="User name"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/appcolor"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toEndOf="@+id/imgicusers"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114"
+        app:layout_constraintWidth_max="wrap" />
+
+    <TextView
+        android:id="@+id/txtcontent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/item_message_view_light"
+        android:minHeight="@dimen/_28sdp"
+        android:fontFamily="@font/roboto_regular"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:text="kjkdsjdksk"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/imgicusers"
+        app:layout_constraintTop_toBottomOf="@+id/txtusername"
+        app:layout_constraintWidth_max="wrap" />
+
+    <TextView
+        android:id="@+id/txttimeuse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="1dp"
+        android:text="ldflkjdkfj"
+        android:textColor="#A1A1A1"
+        android:textSize="@dimen/_9sdp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgicusers"
+        app:layout_constraintTop_toBottomOf="@+id/txtcontent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

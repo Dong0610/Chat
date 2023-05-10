@@ -1,0 +1,27 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/iconhome"
+        android:icon="@drawable/icon_home"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/iconuser"
+        android:icon="@drawable/icon_users"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/iconmess"
+        android:icon="@drawable/icon_chat"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/iconnotification"
+        android:icon="@drawable/icon_notifi"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/iconsetiing"
+        android:icon="@drawable/icon_setting"
+        tools:ignore="MenuTitle" />
+
+
+</menu>

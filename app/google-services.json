@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "37703707117",
+    "firebase_url": "https://chat-duan0610-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "chat-duan0610",
+    "storage_bucket": "chat-duan0610.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37703707117:android:1ded818d475ed61bf19fe4",
+        "android_client_info": {
+          "package_name": "dongdong.duan.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37703707117-tfts8fpm0d9mtfss3dkdha5fsfd0f7hf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5OmY5TdEokldVfeR31eitH2j2DjQ44CE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37703707117-oe71ijp8opec096npgkltrl12rk20a0e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

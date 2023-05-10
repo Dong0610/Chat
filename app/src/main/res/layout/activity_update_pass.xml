@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_46sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgtypeicon"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/index_img_user_bg"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icbackpress"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.538"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/txtusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="txttypeqr"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgtypeicon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/icbackpress"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_light" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout10">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_16sdp"
+                android:text="Đổi mật khẩu"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu cũ"
+                android:textSize="@dimen/_13sdp" />
+
+            <EditText
+                android:id="@+id/txtoldpass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/btn_click_disable"
+                android:backgroundTint="#E8E8E8"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cusor_color_bg_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu mới"
+                android:textSize="@dimen/_13sdp" />
+
+            <EditText
+                android:id="@+id/txtnewpass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/btn_click_disable"
+                android:backgroundTint="#E8E8E8"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cusor_color_bg_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhập lại khẩu"
+                android:textSize="@dimen/_13sdp" />
+
+            <EditText
+                android:id="@+id/edtrepass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/btn_click_disable"
+                android:backgroundTint="#E8E8E8"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cusor_color_bg_light" />
+
+            <TextView
+                android:id="@+id/txtresetpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Mật khẩu mới"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_13sdp" />
+
+            <Button
+                android:id="@+id/btnchangepass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/start_actv_btn_shadow"
+                android:paddingStart="20sp"
+                android:paddingEnd="10sp"
+                android:text="Đổi mật khẩu"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgapp" />
+        </LinearLayout>
+    </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

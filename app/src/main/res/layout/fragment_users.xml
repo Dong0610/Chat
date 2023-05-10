@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    tools:context=".activity.fragment.UsersFragment">
+
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/fragment_users_scene">
+
+        <LinearLayout
+            android:id="@+id/sreachview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_3sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/txtsreach"
+                android:layout_width="307dp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/input_bg_edt_dark"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingStart="@dimen/_20sdp"
+                android:textColor="#FFFFFF"
+                android:textCursorDrawable="@drawable/cusor_color_bg_dark"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/iconsreach"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="end"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/icon_sreach_dark" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rclistusersview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sreachview" />
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/progressload"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="@dimen/_33sdp"
+        android:visibility="gone"
+        android:layout_height="@dimen/_32sdp"
+        android:indeterminateTint="@color/appcolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</FrameLayout>

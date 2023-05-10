@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:layout_width="match_parent"
+    android:maxHeight="@dimen/_250sdp"
+    android:layout_height="wrap_content">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imganh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/_220sdp"
+        android:maxHeight="@dimen/_250sdp"
+        android:padding="@dimen/_10sdp"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_3"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="@dimen/_220sdp"
+        app:riv_corner_radius="@dimen/_4sdp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txtmessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_message_view_dark"
+        android:minHeight="@dimen/_28sdp"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="jidjfidjf"
+        android:layout_marginStart="@dimen/_60sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_max="wrap" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txttimeuse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="1dp"
+        android:text="ldflkjdkfj"
+        android:textColor="#A1A1A1"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmessage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

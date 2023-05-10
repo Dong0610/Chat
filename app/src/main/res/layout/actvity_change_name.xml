@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp">
+
+    <ImageView
+        android:id="@+id/iconswe"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/icon_change_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtsweSEW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Đổi biệt danh"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toEndOf="@+id/iconswe"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtsweSEW">
+        <TextView
+            android:id="@+id/youname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_weight="1"
+            android:text="Bạn "
+           android:gravity="center"
+            android:backgroundTint="#E8E8E8"
+
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/cusor_color_bg_light"
+            tools:ignore="RtlSymmetry" />
+        <TextView
+            android:id="@+id/friendname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:backgroundTint="#E8E8E8"
+            android:text="@string/bi_t_danh_m_i"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/cusor_color_bg_light" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <EditText
+            android:id="@+id/txtoldname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/btn_click_disable"
+            android:backgroundTint="#E8E8E8"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/cusor_color_bg_light" />
+
+        <EditText
+            android:id="@+id/txtnewname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/btn_click_disable"
+            android:backgroundTint="#E8E8E8"
+            android:hint="Biệt danh mới"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/cusor_color_bg_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <Button
+            android:id="@+id/btnconfirmSEW"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/cus_bg_success"
+            android:backgroundTint="@color/limegreen"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/btncancelSEW"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/cus_bg_success"
+            android:backgroundTint="#CFCFCF"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_15sdp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

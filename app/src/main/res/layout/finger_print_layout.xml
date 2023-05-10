@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    android:orientation="vertical"
+    android:layout_height="@dimen/_120sdp">
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/b_o_m_t_v_n_tay"
+        android:textColor="@color/appcolor"
+        android:textSize="@dimen/_16sdp"
+       />
+
+    <ImageView
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:id="@+id/imgfinger"
+        android:layout_width="@dimen/_34sdp"
+        android:layout_height="@dimen/_34sdp"
+        android:src="@drawable/baseline_fingerprint_gray"
+        />
+</LinearLayout>
